@@ -1,0 +1,13 @@
+Checklist
+Para garantir que o Passo 2 está completo, verifique os itens abaixo:
+
+- Certifique-se de ter colocado o título da página
+- Certifique-se de ter separado a página em seções diferentes
+- Certifique-se de ter usado os elementos semânticos corretos
+- Certifique-se de ter criado o topo utilizando uma tag semântica
+- Certifique-se de ter envolvido os demais elementos da página com exceção do rodapé em uma tag semântica que indica o conteúdo principal da página
+- Certifique-se de ter criado a área de formulários
+- Certifique-se de que o formulário está enviando corretamente os dados para o back-end
+- Certifique-se de ter criado a área de ofertas
+- Certifique-se de ter criado a área de anúncios
+- Certifique-se de ter criado o rodapé utilizando uma tag semântica

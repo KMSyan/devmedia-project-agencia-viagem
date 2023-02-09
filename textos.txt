@@ -1,14 +1,14 @@
-TOPO
+(TOPO)
 
 Agência de Viagens
 
-ÁREA DO FORMUlÁRIO
+(ÁREA DO FORMUlÁRIO)
 
 Solicite um orçamento
 
 Informe seus dados
 
-ÁREA DE OFERTAS
+(ÁREA DE OFERTAS)
 
 Ofertas
 
@@ -24,7 +24,7 @@ São Paulo
 
 Maranhão
 
-ÁREA DE ANÚNCIOS
+(ÁREA DE ANÚNCIOS)
 
 Explore a Natureza
 
