@@ -182,3 +182,45 @@ input[type=checkbox] {
   font-size: 14px;
   margin-left: 10px;
 }
+
+/* media query */
+@media (max-width: 540px){
+  .orcamento-form div:nth-child(4),
+  .orcamento-form div:nth-child(5) {
+    flex-wrap:wrap;
+  }
+  .date-location { width:100%}
+  .radio,
+  .checkbox {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px){
+  .orcamento-form button { width: 100%;}
+  .ofertas .grid-1 { height:100%;}
+  .grid-1 > figure,
+  .grid div,
+  .grid-2 figure,
+  .anuncios article {
+    width: 100%;
+  }
+  .grid figure { height: 225px;}
+  .grid-2 figure,
+  .anuncios article:nth-child(2) {
+     margin-top: 15px;
+  }
+  .grid,
+  .grid-2,
+  .anuncios div:nth-child(2),
+  footer > div {
+    flex-direction: column;
+  }
+  .anuncios > div { flex-wrap: wrap;}
+  .contato {
+    width:250px;
+    align-self: center;
+  }
+}
+@media (max-width: 1100px){
+  .container { max-width: 90%;}
+}

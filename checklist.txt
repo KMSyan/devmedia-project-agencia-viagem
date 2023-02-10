@@ -21,3 +21,12 @@ Para garantir que o Passo 3 está completo, verifique os itens abaixo:
 - Certifique-se de ter aplicado estilos específicos nas seções e nos elementos dentro delas
 - Certifique-se de ter reaproveitado o mesmo estilo nas seções e onde mais fosse possível aproveitar.
 - Certifique-se de ter criado estilos específicos, quando necessário, para os elementos que têm estilos globais.
+
+=================================================================================
+Checklist
+Para garantir que o Passo 4 está completo, verifique os itens abaixo:
+
+- Certifique-se de ter aplicado estilos responsivos em todos os elementos necessários
+- Certifique-se de que a página carregue sem problemas em diversos tamanhos de tela
+- Certifique-se se o resultado final da sua página se assemelha aos layouts definidos para cada tamanho
+- Certifique-se de que a meta tag viewport foi adicionada ao seu HTML
