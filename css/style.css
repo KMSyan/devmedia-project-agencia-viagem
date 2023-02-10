@@ -1,0 +1,184 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+body {
+  background-color:#80808029;
+  font-family: "raleway", sans-serif;/*de 200,300 para 400,600,800*/
+}
+img { width:100%; }
+a { text-decoration:none;}
+b {font-weight:600;}
+
+/* reutilizaveis */
+.container {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex { display:flex;}
+.flex-column { flex-direction:column;}
+.justify-content-between { justify-content:space-between;}
+
+
+/* especificas */
+/* top */
+.top {
+  height: 55px;
+  background-color:#fff;
+}
+.top div {
+  align-items: center;
+  height: 100%;
+}
+.top figure {
+  width: 32px;
+  height: 32px;
+}
+.top h1 {
+  font-size: 24px;
+  color:#5d15d1;
+  margin-left: 10px;
+  font-weight: 600;
+}
+/*  */
+.orcamento {
+ height: 100%;
+ background-image: url("../imagens/bahia.jpg");
+ background-size: cover;
+ padding: 50px 0;
+}
+.orcamento header {
+  height: 35px;
+  background-color: #5d15d1;
+  justify-content: center;
+  align-items: center;
+}
+.orcamento figure {
+  width: 20px;
+  transform: rotate(-45deg);
+}
+.orcamento h2 {
+  font-size: 14px;
+  color:#fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.orcamento h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+.orcamento-form {
+  background-color: #fff;
+  padding: 30px 25px 20px;
+}
+.orcamento-form label:first-child {
+  font-size: 16px;
+  font-weight: 600;
+}
+input,
+select {
+  width: 100%;
+  height: 32px;
+  margin: 10px 0;
+}
+input { padding: 0 5px;}
+select { padding: 0 3px;}
+.limit div {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+.date-location { width: calc(50% - 10px);}
+input[type=radio],
+input[type=checkbox] {
+  width: 15px;
+  margin-right: 8px;
+}
+.orcamento-form button {
+  width: 160px;
+  height: 32px;
+  color:#fff;
+  background-color:#5d15d1;
+  border: 0;
+  margin-top: 12px;
+  letter-spacing: .5px;
+}
+/* mix para ofertas e anuncios */
+.promo {
+  margin-top: 32px;
+}
+.promo h2 {
+  font-size: 20px;
+  margin-bottom: 10px;}
+.promo h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.promo img {
+  height: 100%;
+  object-fit: cover;
+}
+/*  */
+.grid { justify-content:space-between;}
+.grid-2 {
+  flex-wrap: wrap;
+  align-content: space-between
+}
+.ofertas .grid-1 { height:375px;}
+.grid-1 > figure,
+.grid div { width:calc(50% - 10px);}
+.grid-2 figure  {
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+}
+.grid figure { position:relative;}
+.grid figcaption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color:#fff;
+  background-color:rgba(0,0,0,.5);
+ }
+ /*  */
+ .anuncios article {
+  width: calc(50% - 10px);
+  height: 100%;
+  flex-direction: column-reverse;
+}
+.article header {
+  padding: 20px;
+  background-color:#fff;
+}
+.anuncios h4 { font-size:16px;}
+.anuncios p {
+  font-size: 14px;
+  color:grey;
+  margin-top: 15px;
+}
+/*  */
+.footer {
+  margin-top: 32px;
+  background-color:#5d15d1;}
+.footer, .footer a { color:#fff;}
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 15px;}
+.footer picture {
+  display: block;
+  width: 18px;
+}
+.contato { margin: 15px 0;}
+.contato div {
+  display: flex;
+  margin: 5px 0;
+}
+.contato span {
+  font-size: 14px;
+  margin-left: 10px;
+}

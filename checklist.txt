@@ -11,3 +11,13 @@ Para garantir que o Passo 2 está completo, verifique os itens abaixo:
 - Certifique-se de ter criado a área de ofertas
 - Certifique-se de ter criado a área de anúncios
 - Certifique-se de ter criado o rodapé utilizando uma tag semântica
+
+=================================================================================
+Checklist
+Para garantir que o Passo 3 está completo, verifique os itens abaixo:
+
+- Certifique-se de ter aplicado estilos em todas as seções e nos seus elementos
+- Certifique-se de ter aplicado estilos gerais nas seções, nos parágrafos e nos destaques
+- Certifique-se de ter aplicado estilos específicos nas seções e nos elementos dentro delas
+- Certifique-se de ter reaproveitado o mesmo estilo nas seções e onde mais fosse possível aproveitar.
+- Certifique-se de ter criado estilos específicos, quando necessário, para os elementos que têm estilos globais.

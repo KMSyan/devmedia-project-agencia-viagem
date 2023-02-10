@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
     <title>Projeto | Agência de viagens</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&amp;display=swap">
   </head>
   <body>
     <!--  -->
-    <header>
-      <div>
+    <header class="top">
+      <div class="container d-flex">
         <figure><img src="imagens\local-logo.png" alt=""></figure>
         <h1>Agência de Viagens</h1>
       </div>
     </header>
     <main>
       <!-- form -->
-      <section>
-        <div>
-          <header>
+      <section class="orcamento">
+        <div class="container">
+          <header class="d-flex">
             <figure><img src="imagens\aviao.png" alt=""></figure>
             <h2>Solicite um orçamento</h2>
           </header>
-          <div>
+          <div class="d-flex flex-column orcamento-form">
             <h3>Informe seus dados</h3>
             <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
               <div>
@@ -37,25 +39,27 @@
                 <label>Celular</label>
                 <input type="tel" name="celular" placeholder="(xx)xxxxx-xxxx">
               </div>
-              <div>
-                <div>
+              <!-- datas -->
+              <div class="d-flex justify-content-between">
+                <div class="date-location">
                   <label>Data da ida</label>
                   <input type="date" name="partida">
                 </div>
-                <div>
+                <div class="date-location">
                   <label>Data da volta</label>
                   <input type="date" name="chegada">
                 </div>
               </div>
-              <div>
-                <div>
+              <!-- localizaçao -->
+              <div class="d-flex justify-content-between">
+                <div class="date-location">
                   <label>Origem</label>
                   <select name="origem">
                     <option value="">Partindo de</option>
                     <option value="na">n/a</option>
                   </select>
                 </div>
-                <div>
+                <div class="date-location">
                   <label>Destino</label>
                   <select name="destino">
                     <option value="">Indo para</option>
@@ -63,9 +67,10 @@
                   </select>
                 </div>
               </div>
+              <!-- infantil -->
               <div>
                 <label>Quarto com cama infantil?</label>
-                <div>
+                <div class="d-flex limit">
                   <div>                    
                     <input type="radio" id="infantil-sim" name="infantil" value="s">
                     <label for="infantil-sim">Sim</label>
@@ -76,14 +81,15 @@
                   </div>
                 </div>
               </div>
+              <!-- preferencias -->
               <div>
                 <label>Preferências de hospedagem</label>
-                <div>
+                <div class="d-flex limit">
                   <div>
                     <input type="checkbox" value="piscina" name="preferencias[]" id="preferencias">
                     <label for="preferencias">Piscina</label>
                   </div>
-                  <div>
+                  <div >
                     <input type="checkbox" value="wifi" name="preferencias[]" id="preferencias">
                     <label for="preferencias">Wi-Fi</label>
                   </div>
@@ -103,92 +109,98 @@
         </div>
       </section>
       <!-- ofertas -->
-      <section>
-        <header>
-          <h2>Ofertas</h2>
-          <h3>Com até <span>50%</span> de desconto.</h3>
-        </header>
-        <div>
-          <figure>
-            <img src="imagens\rio.jpg" alt="">
-            <figcaption>Rio de Janeiro</figcaption>
-          </figure>
-          <div>
+      <section class="promo ofertas">
+        <div class="container">
+          <header>
+            <h2>Ofertas</h2>
+            <h3>Com até <b>50%</b> de desconto.</h3>
+          </header>
+          <div class="d-flex grid grid-1">
             <figure>
-              <img src="imagens\manaus.jpg" alt="">
-              <figcaption>Manaus</figcaption>
-            </figure>
-            <figure>
-              <img src="imagens\saopaulo.jpg" alt="">
-              <figcaption>São Paulo</figcaption>
-            </figure>
-            <figure>
-              <img src="imagens\niteroi.jpg" alt="">
+              <img src="imagens\rio.jpg" alt="">
               <figcaption>Rio de Janeiro</figcaption>
             </figure>
-            <figure>
-              <img src="imagens\maranhao.jpg" alt="">
-              <figcaption>Maranhão</figcaption>
-            </figure>
+            <div class="d-flex grid grid-2">
+              <figure>
+                <img src="imagens\manaus.jpg" alt="">
+                <figcaption>Manaus</figcaption>
+              </figure>
+              <figure>
+                <img src="imagens\saopaulo.jpg" alt="">
+                <figcaption>São Paulo</figcaption>
+              </figure>
+              <figure>
+                <img src="imagens\niteroi.jpg" alt="">
+                <figcaption>Rio de Janeiro</figcaption>
+              </figure>
+              <figure>
+                <img src="imagens\maranhao.jpg" alt="">
+                <figcaption>Maranhão</figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
       <!-- anuncios -->
-      <section>
-        <header>
-          <h2>Explore a Natureza</h2>
-          <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
-        </header>
-        <article>
+      <section class="promo anuncios">
+        <div class="container">
           <header>
-            <h4>Lençois Maranhenses, Brasil</h4>
-            <p>Ida e volta a partir de R$79</p>
-          </header>
-          <figure><img src="imagens\lencol.jpg" alt=""></figure>
-        </article>
-        <article>
-          <header>
-            <h4>Cachoeira Santa Bárbara, Brasil</h4>
-            <p>Ida e volta por R$139</p>
-          </header>
-          <figure><img src="imagens\goias.jpg" alt=""></figure>
-        </article>
+            <h2>Explore a Natureza</h2>
+            <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer.</h3>
+         </header>
+         <div class="d-flex justify-content-between">
+           <article class="article d-flex">
+             <header>
+               <h4>Lençois Maranhenses, Brasil</h4>
+               <p>Ida e volta a partir de <b>R$79</b></p>
+             </header>
+             <figure><img src="imagens\lencol.jpg" alt=""></figure>
+           </article>
+           <article class="article d-flex">
+             <header>
+               <h4>Cachoeira Santa Bárbara, Brasil</h4>
+               <p>Ida e volta por <b>R$139</b></p>
+             </header>
+             <figure><img src="imagens\goias.jpg" alt=""></figure>
+           </article>
+          </div>
+        </div>
       </section>
     </main>
     <!--  -->
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="container d-flex justify-content-between">
         <!-- contato -->
-        <section>
+        <section class="contato d-flex flex-column">
           <h2>Contato</h2>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\local.png" alt=""></picture>
+            <a href="#"><span>Rio de Janeiro, RJ</span></a>
           </div>
-          <span>Rio de Janeiro, RJ</span>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\telefone.png" alt=""></picture>
+            <a href="tel:"><span>Telefone: (21) 9999-9999</span></a>
           </div>
-          <span>Telefone: (21) 9999-9999</span>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\email.png" alt=""></picture>
+            <a href="mailto:"><span>Email: contato@agencia.com.br</span></a>
           </div>
-          <span>Email: contato@agencia.com.br</span>
         </section>
         <!-- social -->
-        <section>
+        <section class="contato d-flex flex-column">
           <h2>Nossas Redes Sociais</h2>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\fb.png" alt=""></picture>
+            <a href="#"><span>/AgenciaDeViagem</span></a>
           </div>
-          <span>/AgenciaDeViagem</span>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\ig.png" alt=""></picture>
+            <a href="#"><span>@AgenciaDeViagem</span></a>
           </div>
-          <span>@AgenciaDeViagem</span>
           <div>
-            <picture><img src="" alt=""></picture>
+            <picture><img src="imagens\tt.png" alt=""></picture>
+            <a href="#"><span>@AgenciaDeViagem</span></a>
           </div>
-          <span>@AgenciaDeViagem</span>
         </section>
       </div>
     </footer>
